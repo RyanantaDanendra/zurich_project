@@ -11,6 +11,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto';
+    overflow-x: hidden;
 }
 
 .container-hero:before {
@@ -58,4 +59,34 @@
 
 .box {
     border-radius: 0 25% 0 25%;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 700px) {
+    .text {
+        width: 100%;
+        margin-left: 0;
+    }
+    .h2-hero, .h1-hero, by {
+        text-align: center;
+    }
+    .button {
+        display: flex;
+        justify-content: center;
+    }
+    #about .container {
+        flex-direction: column;
+    }
+    #about .text {
+        margin-top: 30px;
+    }
+    #services .boxes {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #why .container {
+        flex-direction: column-reverse;
+        gap: 0;
+    }
 }
