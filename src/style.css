@@ -11,7 +11,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto';
-    overflow-x: hidden;
 }
 
 .container-hero:before {
@@ -88,5 +87,54 @@
     #why .container {
         flex-direction: column-reverse;
         gap: 0;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        background: white;
+        width: 50px;
+        height: 10px;
+        position: relative;
+        top: 28px;
+        left: 10px;
+    }
+    .hamburger:before {
+        background: white;
+        width: 50px;
+        height: 10px;
+        content: '';
+        position: absolute;
+        left: 0;
+        top: -15px;
+    }
+    .hamburger:after {
+        background: white;
+        width: 50px;
+        height: 10px;
+        content: '';
+        position: absolute;
+        left: 0;
+        top:15px;
+    }
+    nav .links {
+        flex-direction: column;
+        gap: 0;
+        margin-top: 80px;
+        margin-left: 18px;
+        z-index: 1;
+        transform: translateX(-500px);
+        transition: all 1s ease-out;
+        
+    }
+    .links .link {
+        font-size: 2rem;
+    }
+    .bg-links {
+        display: block;
+        position: absolute;
+        z-index: -5;
+        top: 0;
+        transform: translateX(-500px);
+        transition: all .5s ease-out;
     }
 }

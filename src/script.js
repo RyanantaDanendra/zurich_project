@@ -30,3 +30,21 @@ function changeBackground() {
 }
 
 setInterval(changeBackground, 6000);
+
+// HAMBURBER
+const hamburger = document.getElementsByClassName("hamburger")[0];
+const links = document.getElementsByClassName('links')[0];
+const bgLinks = document.getElementsByClassName("bg-links")[0];
+
+function hamburgerMenu() {
+    if(links.style.transform === "translateX(0)" && bgLinks.style.transform === "translateX(0)") {
+        links.style.transform = "translateX(-500px)";
+        bgLinks.style.transform = "translateX(-500px)";
+    } else {
+        links.style.transform = "translateX(0%)";
+        bgLinks.style.transform = "translateX(0%)";
+
+    }
+}
+
+hamburger.addEventListener("click", hamburgerMenu);
