@@ -1004,6 +1004,10 @@ video {
   transform: none;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .touch-auto {
   touch-action: auto;
 }
@@ -2836,6 +2840,7 @@ video {
     z-index: 1;
     transform: translateX(-500px);
     transition: all 1s ease-out;
+    align-items: start;
   }
 
   .links .link {
@@ -2849,6 +2854,45 @@ video {
     top: 0;
     transform: translateX(-500px);
     transition: all .5s ease-out;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  #hero h1 {
+    font-size: 2rem;
+  }
+
+  #hero h2 {
+    font-size: 1rem;
+  }
+
+  #hero p {
+    text-align: center;
+  }
+
+  #why .container {
+    margin-top: 400px;
+  }
+
+  footer .socials {
+    margin: 20px;
+  }
+
+  .socials .social-outline {
+    width: 50px;
+    height: 50px;
+  }
+
+  .socials .social-icon {
+    width: 20px;
+  }
+
+  footer .links {
+    margin-top: 10px;
   }
 }
 
