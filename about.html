@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>About</title>
 
     <link rel="stylesheet" href="src/output.css">
     <link rel="stylesheet" href="src/style.css">
 </head>
-<body class="overflow-x-hidden">
+<body>
     <nav>
-        <div class="container-nav w-full h-20 bg-blue-400 shadow-md shadow-black fixed" style="z-index: auto;">
+        <div class="container-nav z-50 w-full h-20 bg-blue-400 shadow-md shadow-black fixed" style="z-index: auto;">
             <div class="hamburger hidden"></div>
             <div class="bg-links hidden bg-blue-400 w-72 h-96"></div>
             <div class="links flex justify-center items-center mt-7 gap-4">
-                <a href="" class="link text-white">Home</a>
+                <a href="index.html" class="link text-white">Home</a>
                 <a href="about.html" class="link text-white">About</a>
                 <div class="services">
                     <div class="button flex">
@@ -44,92 +44,73 @@
         </div>
     </nav>
 
-    <div id="hero">
-        <div class="container-hero w-full h-screen flex items-center">
-            <div class="text text-white">
-                <p class="by">By: Name. . . </p>
-                <h1 class="h1-hero text-6xl  font-bold overflow-hidden">Zurich Insurace</h1>
-                <h2 class="h2-hero font-bold text-xl">Your Trusted Partner In Protection</h2>
-
-                <div class="button mt-10 overflow-hidden">
-                    <a href="" class="bg-blue-500 rounded-full px-5 py-1 hover:bg-blue-900 hover:ease-out hover:duration-100">About</a>
-                    <a href="" class="bg-blue-500 rounded-full px-5 py-1 hover:bg-blue-900 hover:ease-out hover:duration-100">Services</a>
-                </div>
-            </div>
-
-            <div class="background w-full h-screen absolute" style="z-index: -5;">
-                <img src="./src/assets/bg-1.jpg" alt="" class="backgroundImage show object-center">
-                <img src="./src/assets/bg-2.jpg" alt="" class="backgroundImage object-center">
-                <img src="./src/assets/bg-3.jpg" alt="" class="backgroundImage object-center">
-            </div>
+    <div id="about-hero">
+        <div class="container w-full h-96 bg-cover bg-center bg-no-repeat bg-fixed flex items-center justify-center flex-col" style="background-image: url('src/assets/bg-3.jpg');">
+            <h1 class="text-4xl text-white font-bold z-50">About</h1>
+            <h2 class="text-white z-50">Solusi asuransi andal untuk keamanan dan ketenangan Anda.</h2>
         </div>
     </div>
 
-    <div id="about">
-        <div class="container w-full h-screen flex justify-center pt-20 px-10">
+    <div id="history">
+        <h1 class="text-center text-4xl font-bold mt-20 px-20">Sejarah</h1>
+        <h2 class="text-center">Komitmen pada keunggulan sejak awal.</h2>
+        <div class="container w-full h-full flex mt-8 pb-24 px-10">
             <div class="image overflow-hidden w-1/2 flex justify-end">
                 <div class="cover w-96 h-80 overflow-hidden">
                     <img src="./src/assets/buildings.jpg" alt="" class="hover:scale-110 duration-300 hover:ease-out object-cover object-center">
                 </div>
             </div>
-            <div class="text  w-1/2 h-full overflow-hidden">
-                <h1 class="text-3xl font-bold">Your Trusted Partner In Protection</h1>
-                <div class="w-96 h-1 rounded-full bg-blue-500 my-3"></div>
-                <p class="text-justify mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae a ratione omnis culpa beatae assumenda debitis fugiat accusamus rerum! Hic illum laboriosam debitis molestias aperiam quidem architecto mollitia totam aliquid esse! Accusantium harum quo illo, ipsa optio provident. Veniam consectetur molestiae dignissimos itaque eos necessitatibus a voluptatem, recusandae nam doloribus?</p>
-                <a href="" class="bg-blue-500 rounded-full text-white px-5 py-2 hover:bg-blue-800 hover:ease-out duration-300">See more ></a>
-            </div>
-        </div>
-    </div>
-
-    <div id="services">
-        <div class="container w-full h-screen">
-            <h1 class="font-bold text-4xl text-center">Services</h1>
-            <p class="text-center">Solusi Ahli untuk Setiap Kebutuhan</p>
-
-            <div class="boxes flex px-8 pt-12 pb-8 gap-10 justify-center flex-wrap">
-                <div class="box w-56 h-56 bg-blue-400 shadow-black shadow-lg text-white p-4 overflow-hidden">
-                    <h1 class="font-bold text-2xl">Kendaraan</h1>
-                    <p class="mt-5">Perjalanan tenang dengan perlindungan maksimal.</p>
-
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M135.2 117.4L109.1 192H402.9l-26.1-74.6C372.3 104.6 360.2 96 346.6 96H165.4c-13.6 0-25.7 8.6-30.2 21.4zM39.6 196.8L74.8 96.3C88.3 57.8 124.6 32 165.4 32H346.6c40.8 0 77.1 25.8 90.6 64.3l35.2 100.5c23.2 9.6 39.6 32.5 39.6 59.2V400v48c0 17.7-14.3 32-32 32H448c-17.7 0-32-14.3-32-32V400H96v48c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V400 256c0-26.7 16.4-49.6 39.6-59.2zM128 288a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm288 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/></svg>
-                </div>
-                <div class="box w-56 h-56 bg-blue-400 shadow-black shadow-lg text-white p-4 overflow-hidden">
-                    <h1 class="font-bold text-2xl">Kesehatan</h1>
-                    <p class="mt-5">Jaminan kesehatan, ketenangan hidup.</p>
-
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M228.3 469.1L47.6 300.4c-4.2-3.9-8.2-8.1-11.9-12.4h87c22.6 0 43-13.6 51.7-34.5l10.5-25.2 49.3 109.5c3.8 8.5 12.1 14 21.4 14.1s17.8-5 22-13.3L320 253.7l1.7 3.4c9.5 19 28.9 31 50.1 31H476.3c-3.7 4.3-7.7 8.5-11.9 12.4L283.7 469.1c-7.5 7-17.4 10.9-27.7 10.9s-20.2-3.9-27.7-10.9zM503.7 240h-132c-3 0-5.8-1.7-7.2-4.4l-23.2-46.3c-4.1-8.1-12.4-13.3-21.5-13.3s-17.4 5.1-21.5 13.3l-41.4 82.8L205.9 158.2c-3.9-8.7-12.7-14.3-22.2-14.1s-18.1 5.9-21.8 14.8l-31.8 76.3c-1.2 3-4.2 4.9-7.4 4.9H16c-2.6 0-5 .4-7.3 1.1C3 225.2 0 208.2 0 190.9v-5.8c0-69.9 50.5-129.5 119.4-141C165 36.5 211.4 51.4 244 84l12 12 12-12c32.6-32.6 79-47.5 124.6-39.9C461.5 55.6 512 115.2 512 185.1v5.8c0 16.9-2.8 33.5-8.3 49.1z"/></svg>
-                </div>
-                <div class="box w-56 h-56 bg-blue-400 shadow-black shadow-lg text-white p-4 overflow-hidden">
-                    <h1 class="font-bold text-2xl">Hidup</h1>
-                    <p class="mt-5">Perlindungan hidup untuk masa depan yang pasti.</p>
-
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M335.5 4l288 160c15.4 8.6 21 28.1 12.4 43.5s-28.1 21-43.5 12.4L320 68.6 47.5 220c-15.4 8.6-34.9 3-43.5-12.4s-3-34.9 12.4-43.5L304.5 4c9.7-5.4 21.4-5.4 31.1 0zM320 160a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM144 256a40 40 0 1 1 0 80 40 40 0 1 1 0-80zm312 40a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM226.9 491.4L200 441.5V480c0 17.7-14.3 32-32 32H120c-17.7 0-32-14.3-32-32V441.5L61.1 491.4c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l37.9-70.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c16.3 0 31.9 4.5 45.4 12.6l33.6-62.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c32.4 0 62.1 17.8 77.5 46.3l33.6 62.3c13.5-8.1 29.1-12.6 45.4-12.6h19.5c32.4 0 62.1 17.8 77.5 46.3l37.9 70.3c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8L552 441.5V480c0 17.7-14.3 32-32 32H472c-17.7 0-32-14.3-32-32V441.5l-26.9 49.9c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l36.3-67.5c-1.7-1.7-3.2-3.6-4.3-5.8L376 345.5V400c0 17.7-14.3 32-32 32H296c-17.7 0-32-14.3-32-32V345.5l-26.9 49.9c-1.2 2.2-2.6 4.1-4.3 5.8l36.3 67.5c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8z"/></svg>
-                </div>
-                <div class="box w-56 h-56 bg-blue-400 shadow-black shadow-lg text-white p-4 overflow-hidden">
-                    <h1 class="font-bold text-2xl">Properti</h1>
-                    <p class="mt-5">Rasa aman untuk setiap sudut properti Anda.</p>
-
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M48 0C21.5 0 0 21.5 0 48V464c0 26.5 21.5 48 48 48h96V432c0-26.5 21.5-48 48-48s48 21.5 48 48v80h96c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48H48zM64 240c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V240zm112-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H176c-8.8 0-16-7.2-16-16V240c0-8.8 7.2-16 16-16zm80 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H272c-8.8 0-16-7.2-16-16V240zM80 96h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16zm80 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H176c-8.8 0-16-7.2-16-16V112zM272 96h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H272c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16z"/></svg>
-                </div>
-            </div>
-
-            <div class="serviceslink flex justify-end">
-                <a href="" class="underline text-blue-400">Lihat Selengkapnya >>></a>
-            </div>
-        </div>
-    </div>
-
-    <div id="why">
-        <div class="container w-full h-full flex gap-10 px-10 pb-32">
             <div class="text w-1/2">
-                <h1 class="text-4xl font-bold overflow-hidden">Why Choose Us?</h1>
-                <div class="w-56 h-1 rounded-full bg-blue-500 my-3"></div>
-                <p class="text-justify">Pilih Zurich untuk ketenangan pikiran dengan tarif kompetitif dan cakupan komprehensif. Nikmati teknologi mutakhir untuk klaim online yang mudah dan pembaruan polis real-time. Percayalah pada keandalan kami dan solusi yang dipersonalisasi sesuai kebutuhan Anda</p>
+                <p class="text-justify"><span class="font-bold text-2xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </span>Officiis beatae similique distinctio, fuga harum nemo fugiat deleniti sapiente commodi et, illo aliquam. Unde voluptas ex magnam maiores nihil dolore! Quos aperiam voluptate cumque officiis pariatur corporis vel adipisci,laborum quibusdam soluta facilis quisquam eos in iusto consequuntur laboriosam nostrum temporibus nisi ab eaque recusandae. Expedita laborum adipisci placeat numquam autem quos repellendus quasi enim reiciendis esse neque iste ipsa dicta quia deleniti asperiores mollitia maiores, nesciunt doloribus est voluptatem. Numquam quibusdam facere voluptates laboriosam ab itaque architecto, debitis necessitatibus quia aliquam aut placeat eveniet nesciunt quod, voluptate aliquid. Architecto, eum?</p>
             </div>
-            <div class="photo w-1/2 overflow-hidden">
-                <div class="cover w-96 h-80 overflow-hidden">
-                    <img src="./src/assets/working.jpg" alt="" class="object-center hover:scale-110 hover:ease-out duration-300">
-                </div>
+        </div>
+    </div>
+
+    <div id="visi-misi">
+        <h1 class="text-4xl font-bold text-center">Visi dan Misi</h1>
+        <h2 class="text-center">Visi adalah tujuan kami; misi adalah langkah kami.</h2>
+        <div class="container w-full h-full mt-10 pb-20 flex">
+            <div class="cover w-1/2 p-8">
+                <h1 class="text-center text-5xl font-bold">Visi</h1>
+                <div class="w-32 h-1 mx-auto bg-yellow-500 mt-2"></div>
+                <p class="text-justify mt-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit sequi, dignissimos minus totam ratione alias sit inventore corporis iusto. Eligendi reprehenderit impedit adipisci deserunt ratione ad, possimus in blanditiis atque!</p>
+            </div>
+            <div class="cover w-1/2 p-8">
+                <h1 class=" text-5xl font-bold text-center">Misi</h1>
+                <div class="w-32 h-1 mx-auto bg-yellow-500 mt-2"></div>
+                <ul class="list-decimal text-justify mt-5">
+                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, neque?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt?</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem, ipsum dolor.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="agent">
+        <h1 class="text-4xl font-bold text-center">Agent</h1>
+        <p class="text-center">Meet our Agent</p>
+        <div class="container w-full h-full flex justify-between pb-20 px-3">
+            <div class="identity mt-20 w-1/3">
+                <h1 class="text-4xl font-bold">Name</h1>
+                <div class="w-32 h-1 bg-blue-500 mt-2"></div>
+                <p class="text-justify mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam excepturi sunt quibusdam necessitatibus tempora veniam doloremque vitae corrupti. Blanditiis aperiam accusamus aliquid officiis accusantium labore saepe perspiciatis architecto, quidem facilis optio reprehenderit officia illo nesciunt est adipisci. Ipsa totam autem laboriosam ea? Deleniti est eligendi, cumque ex labore quos ratione!</p>
+            </div>
+
+            <div class="cover w-64 h-48 mt-20 relative bg-blue-400 rounded-xl">
+                <img src="src/assets/agent.png" alt="" class="absolute bottom-0 left-0 right-0" style="width: 100%; height: auto; max-height: none; top: -38px;">
+            </div>
+
+            <div class="experience w-1/3 mt-20">
+                <h1 class="text-4xl font-bold">Experience</h1>
+                <div class="w-32 h-1 bg-blue-500 mt-2"></div>
+                <ul class="list-decimal mt-2">
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem, ipsum dolor.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit.</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -154,6 +135,7 @@
             <p class="overflow-hidden">Copyright @2024 Ryananta Danendra, All Right Reserved </p>
         </div>
     </footer>
+
 
     <script src="src/script.js"></script>
 </body>
