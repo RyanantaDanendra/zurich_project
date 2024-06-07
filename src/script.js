@@ -3,7 +3,7 @@ const services = document.getElementById("services");
 const arrow = document.getElementsByClassName("arrow")[0];
 
 function changeDisplay() {
-    if(dropdown.classList.add("dropdownShow")) {
+    if(dropdown.classList.contains("dropdownShow")) {
         dropdown.classList.remove("dropdownShow");
     } else {
         dropdown.classList.add("dropdownShow");
