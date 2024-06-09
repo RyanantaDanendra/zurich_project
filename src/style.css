@@ -149,6 +149,35 @@ html {
         transform: translateX(-500px);
         transition: all .5s ease-out;
     }
+    #about-hero .container:after {
+        top: 80px;
+    }
+    #history .container {
+        flex-direction: column;
+    }
+    #visi-misi .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    #visi-misi .cover {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #agent .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    #agent .identity, .experience {
+        width: 90%;
+    }
+    #services-service .container .service {
+        flex-direction: column-reverse;
+        padding-left: 20px;
+    }
+    #services-service .container .service .text {
+        margin-top: 20px;
+        padding-right: 20px;
+    }
 }
 
 @media screen and (max-width: 500px) {
