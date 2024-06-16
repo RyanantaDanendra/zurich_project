@@ -23,19 +23,19 @@ arrow.addEventListener("click", changeDisplay);
 const backgroundImage = document.querySelectorAll(".backgroundImage");
 let backgroundIndex = 0;
 
-function changeBackground() {
-    backgroundImage[backgroundIndex].classList.remove("show");
+// function changeBackground() {
+//     backgroundImage[backgroundIndex].classList.remove("show");
 
-    backgroundIndex++;
+//     backgroundIndex++;
 
-    if(backgroundIndex >= backgroundImage.length) {
-        backgroundIndex = 0;
-    }
+//     if(backgroundIndex >= backgroundImage.length) {
+//         backgroundIndex = 0;
+//     }
 
-    backgroundImage[backgroundIndex].classList.add("show");
-}
+//     backgroundImage[backgroundIndex].classList.add("show");
+// }
 
-setInterval(changeBackground, 6000);
+// setInterval(changeBackground, 6000);
 
 // HAMBURBER
 const hamburger = document.getElementsByClassName("hamburger")[0];
