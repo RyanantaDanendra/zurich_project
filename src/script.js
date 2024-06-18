@@ -8,17 +8,32 @@ function changeDisplay() {
     } else {
         dropdown.classList.add("dropdownShow");
     }
-    
 }
 
-// function defaultDisplay() {
-//     dropdown.classList.remove("dropdownShow");
-// }
+function overDisplay() {
+    dropdown.classList.add("dropdownShow");
+}
 
-arrow.addEventListener("click", changeDisplay);
-// dropdown.addEventListener("click", changeDisplay);
-// dropdown.addEventListener("click", defaultDisplay);
-// services.addEventListener("mouseout", defaultDisplay);
+function defaultDisplay() {
+    dropdown.classList.remove("dropdownShow");
+}
+
+function addListeners() {
+    if(window.innerWidth <= 700) {
+        arrow.addEventListener("click", changeDisplay);
+    } else {
+        services.addEventListener("mouseover", overDisplay);
+        services.addEventListener("mouseout", defaultDisplay);
+        dropdown.addEventListener("mouseover", overDisplay);
+        dropdown.addEventListener("mouseout", defaultDisplay);
+    }
+}
+
+addListeners();
+
+window.addEventListener('resize', addListeners);
+
+
 
 const backgroundImage = document.querySelectorAll(".backgroundImage");
 let backgroundIndex = 0;

@@ -802,8 +802,24 @@ video {
   margin-top: 1.5rem;
 }
 
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mt-80 {
+  margin-top: 20rem;
+}
+
+.mt-56 {
+  margin-top: 14rem;
+}
+
+.ms-5 {
+  margin-inline-start: 1.25rem;
 }
 
 .box-border {
@@ -2251,6 +2267,38 @@ video {
   padding-top: 5rem;
 }
 
+.pt-32 {
+  padding-top: 8rem;
+}
+
+.ps-8 {
+  padding-inline-start: 2rem;
+}
+
+.pt-3 {
+  padding-top: 0.75rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pt-80 {
+  padding-top: 20rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
+}
+
+.pt-24 {
+  padding-top: 6rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2921,17 +2969,6 @@ html {
   border-radius: 0 25% 0 25%;
 }
 
-#about-hero .container:after {
-  width: 100%;
-  height: 300px;
-  background-color: rgba(0, 0, 0, 0.5);
-  content: "";
-  position: absolute;
-  pointer-events: none;
-  overflow: hidden;
-  top: 14%;
-}
-
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 700px) {
@@ -3117,6 +3154,15 @@ html {
 
   .hero-image:nth-child(3) {
     bottom: 0;
+  }
+}
+
+@media screen and (max-height: 710px) {
+  #about .text {
+    height: 200%;
+  }
+
+  #home-services .container {
   }
 }
 
